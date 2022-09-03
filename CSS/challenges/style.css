@@ -1,6 +1,7 @@
 /* Reset */
 html, body {
-    margin: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 h2, p {
@@ -9,23 +10,27 @@ h2, p {
 }
 
 /* Components */
-html, body {
-    height: 100%;
-}
-
 .wrapper {
     background-image: url(./images/bg.png);
     background-size: cover;
-    height: 100%;
+    background-color: black;
+    padding: 80px;
 }
 
 .section {
     width: 200px;
 }
 
-.section.fox {
+.fox {
     margin: 0 auto;
-    padding-top: 80px;
+}
+
+.bear {
+    margin: -120px 15% 0; /* margin에 - 값을 설정하지 않고 배치할 수 있는 방법이 있을까? */
+}
+
+.squirrel {
+    margin: -350px 68% 0;
 }
 
 .animal img {
@@ -43,8 +48,8 @@ html, body {
 
 h2 {
     font-family: 'Inter', sans-serif;
-    font-weight: 700;
     font-size: 22px;
+    font-weight: 700;
     letter-spacing: 0.02em;
     color: whitesmoke;
 }
