@@ -1,0 +1,60 @@
+/* Reset */
+html, body {
+    margin: inherit;
+}
+
+h2, p {
+    font-size: inherit;
+    margin: inherit;
+}
+
+/* Components */
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    background-image: url(./images/bg.png);
+    background-size: cover;
+    height: 100%;
+}
+
+.section {
+    width: 200px;
+}
+
+.section.fox {
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.animal img {
+    display: block;
+    width: 100%; /* width 값을 auto로 설정했을 때, 부모 요소의 너비를 넘어가는 이유는? */
+}
+
+.land {
+    background-color: rgb(147, 86, 45);
+    padding: 8px 13px 13px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    box-shadow: 0 7px 0 rgb(74, 38, 16) ;
+}   
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    color: whitesmoke;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    line-height: 1.4em;
+    color: rgba(255, 255, 255, 0.605);
+    margin: 8px 0;
+}
