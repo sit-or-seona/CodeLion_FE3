@@ -1,7 +1,6 @@
 /* Reset */
 html, body {
-    margin: 0;
-    padding: 0;
+    margin: inherit;
 }
 
 h2, p {
@@ -10,11 +9,14 @@ h2, p {
 }
 
 /* Components */
+html, body {
+    height: 100%;
+}
+
 .wrapper {
     background-image: url(./images/bg.png);
     background-size: cover;
-    background-color: black;
-    padding: 80px;
+    height: 100%;
 }
 
 .section {
@@ -23,19 +25,12 @@ h2, p {
 
 .fox {
     margin: 0 auto;
-}
-
-.bear {
-    margin: -120px 15% 0; /* margin에 - 값을 설정하지 않고 배치할 수 있는 방법이 있을까? */
-}
-
-.squirrel {
-    margin: -350px 68% 0;
+    padding-top: 80px;
 }
 
 .animal img {
-    display: block;
-    width: 100%; /* width 값을 auto로 설정했을 때, 부모 요소의 너비를 넘어가는 이유는? */
+    vertical-align: top;
+    width: 100%;
 }
 
 .land {
