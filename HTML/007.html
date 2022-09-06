@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded content - img</title>
+</head>
+<body>
+    <!-- 스크린 리더가 읽지 않습니다. -->
+    <img src="a.jpg" alt="">
+    <!-- 스크린 리더가 'a'를 읽습니다. -->
+    <img src="a.jpg">
+    <!-- 스크린 리더가 '이미지'를 읽습니다. -->
+    <img src="a.jpg" alt="이미지">
+    <!-- 상대 경로: 현재 폴더에 jeju.jpg -->
+    <img src="./a.jpg" alt="이미지">
+    <!-- 상대 경로: 상위 폴더에 jeju.jpg -->
+    <img src="../sample/a.jpg" alt="이미지">
+    <!-- 절대 경로 -->
+    <img src="http://www.paullab.co.kr/images/ceo.png" alt="이미지">
+    <img src="C:\Users\SEONA\Desktop\FE3\HTML\jeju.jpg" alt="이미지">
+
+    <!-- 해상도 조정 -->
+    <img
+    width="200px"
+    srcset="img/logo_1.png 2x,
+            img/logo_2.png 3x"
+    src="a.png"
+    alt="test">
+
+</body>
+</html>
