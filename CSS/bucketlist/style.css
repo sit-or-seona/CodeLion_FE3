@@ -1,57 +1,65 @@
 /* Resets */
-h1, ul {
+h1, ol {
     margin: 0;
-    font-size: inherit;
-    font-weight: inherit;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
 }
 
 /* Layouts */
 .wrapper {
-    background-color: #efefef;
     width: 400px;
     margin: 100px auto;
-    border-radius: 30px;
-    box-shadow: 1px 1px 10px #aaaaaa;
 }
 
 /* Components */
+:root {
+    font-family: 'arial';
+}
+
 body {
     background-color: #dddddd;
 }
 
-.list-header {
+.buckets {
     background-color: white;
-    border-radius: 30px 30px 0 0;
-    border-bottom: 4px solid #dddddd;
-    padding: 40.5px 0px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 20px 2px #aaaaaa94;
+    overflow: hidden;
+}
+
+.buckets-header {
+    border-bottom: 4px solid #ddd;
+    padding: 40px 0;
+    color: deeppink;
 }
 
 h1 {
+    line-height: 1;
+    border-left: 10px solid;
     padding-left: 20px;
-    border-left: 10px solid #ff1493;
-    font-family: Arial, sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    color: #ff1493;
 }
 
-.list-contents {
-    padding: 30px 30px 18px;
+.buckets-contents {
+    background-color: #efefef;
+    padding: 30px;
 }
 
-.list-contents > li {
+.lists li {
     background-color: white;
     border: 4px solid #aaaaaa;
+    padding: 10px;
     border-radius: 6px;
-    padding: 9px 15px 10px;
-    margin-bottom: 12px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    list-style: none;
 }
 
-li.blue {
+.lists li + li {
+    /* 2번 */
+    margin-top: 10px;
+}
+
+li.active {
     color: #1e91ff;
     border: 4px solid #1e91ff;
 }
