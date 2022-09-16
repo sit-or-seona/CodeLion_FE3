@@ -1,0 +1,16 @@
+:root {
+    font-family: 'Montserrat', sans-serif;
+	/*
+	font-weight: 500;
+	font-weight: 700;
+	*/
+}
+
+.wrapper {
+	width: 1080px;
+	margin: 100px auto;
+}
+
+body {
+	background-color: #51318b;
+}
