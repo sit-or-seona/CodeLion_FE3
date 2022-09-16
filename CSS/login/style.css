@@ -1,0 +1,74 @@
+/* fonts */
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+
+/* Resets */
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Components */
+html {
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.login {
+    width: 316px;
+    margin: 200px auto;
+    border: 1px solid #DBDBDB;
+    padding: 18px 16px;
+    border-radius: 5px;
+}
+
+.login-tit {
+    line-height: 15px;
+}
+
+.login-link {
+    display: inline-block;
+    width: 100%;
+    padding: 11px 0;
+    margin: 14px 0;
+    background-color: #711BFF;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
+
+.logo {
+    height: 1.4em;
+    vertical-align: top;
+}
+
+.info-user {
+    color: #767676;
+    line-height: 15px;
+    overflow: hidden;
+}
+
+.info-user img {
+    margin-right: 4px;
+    height: 15px;
+    vertical-align: bottom;
+}
+
+.link-user {
+    float: left;
+}
+
+.link-user.pw::before {
+    content: "|";
+    margin: 0 5px;
+}
+
+.link-join {
+    float: right;
+}
