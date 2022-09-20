@@ -1,10 +1,22 @@
 /* fonts */
-@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    src: url(../102/images/fonts/SpoqaHanSansNeo-Regular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    src: url(../102/images/fonts/SpoqaHanSansNeo-Medium.otf);
+    font-weight: 500;
+} 
 
 /* Resets */
 p {
     margin: 0;
     padding: 0;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 a {
@@ -12,18 +24,29 @@ a {
     color: inherit;
 }
 
+.txt-hide {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
 /* Components */
 html {
     font-family: 'Spoqa Han Sans', 'Sans-serif';
     font-size: 12px;
-    font-weight: normal;
+    font-weight: 400;
+    line-height: 15px;
 }
 
 .login {
-    width: 316px;
+    box-sizing: border-box;
+    width: 350px;
     margin: 200px auto;
     border: 1px solid #DBDBDB;
-    padding: 18px 16px;
+    padding: 18px 15px 17px;
     border-radius: 5px;
 }
 
@@ -41,6 +64,7 @@ html {
     text-align: center;
     font-weight: 500;
     color: white;
+    cursor: pointer;
 }
 
 .logo {
@@ -50,14 +74,19 @@ html {
 
 .info-user {
     color: #767676;
-    line-height: 15px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .info-user img {
     margin-right: 4px;
-    height: 15px;
     vertical-align: bottom;
+    width: 16px;
+    height: 16px;
+}
+
+.info-user * {
+    float: left;
 }
 
 .link-user {
@@ -65,8 +94,13 @@ html {
 }
 
 .link-user.pw::before {
-    content: "|";
-    margin: 0 5px;
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 11px;
+    background-color: #767676;
+    margin: 0 6px 0 5px;
+    vertical-align: -1px;
 }
 
 .link-join {
