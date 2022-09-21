@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성배 레이아웃</title>
+    <style>
+        .wrapper {
+            display: grid;
+            margin: 200px auto;
+            width: 600px;
+            height: 500px;
+            gap: 10px;
+            padding: 10px;
+            text-align: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+            "header     header      header"
+            "section    section     aside"
+            "section    section     aside"
+            "section    section     aside"
+            "footer     footer      footer"
+            ;
+            background-color: #466fa6;
+            color: #eee;
+            font-size: 20px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #96c9f2;
+        }
+
+        section {
+            grid-area: section;
+            background-color: #485373;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: #c7f544;
+            color: #444;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #ff7769;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>header</header>
+        <section>section > article</section>
+        <aside>aside</aside>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
