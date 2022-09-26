@@ -55,6 +55,19 @@
             height: 10px;
             background-image: url('');
         }
+
+        @media screen and (-webkit-min-device-pixel-ratio: 2) {
+            .labl-hold::before {
+                background-image: url("images/css_sprites_retina.png");
+                background-position: -52px -10px;
+                background-size: 84px 42px;
+            }
+
+            .inp-hold:checked+.labl-hold::before {
+                background-image: url("images/css_sprites_retina.png");
+                background-position: -10px -10px;
+            }
+        }
     </style>
 </head>
 
