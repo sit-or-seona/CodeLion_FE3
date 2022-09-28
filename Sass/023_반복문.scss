@@ -1,0 +1,8 @@
+// #{$변수명}
+
+@for $seona from 1 through 5 {
+    .profile-#{$seona} {
+        background-color: red;
+        font-size: #{$seona * 10}px;
+    }
+} 

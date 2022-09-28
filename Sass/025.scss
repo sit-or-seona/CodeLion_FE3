@@ -1,0 +1,9 @@
+$seona: 10;
+@while $seona > 1 {
+    $seona: $seona - 2;
+    .content-#{$seona} {
+        width: 100px;
+        height: 100px;
+        background: red;
+    }
+}

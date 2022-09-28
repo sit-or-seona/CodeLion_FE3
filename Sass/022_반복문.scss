@@ -1,0 +1,13 @@
+// #{$변수명}
+
+@for $i from 1 through 5 {
+    .photo-box:nth-child(#{$i}) {
+        background-image: url("../assets/phoster#{$i}.png");
+    }
+}
+
+@for $seona from 1 through 5 {
+    .photo-box:nth-child(#{$seona}) {
+        background-image: url("../assets/phoster#{$seona}.png");
+    }
+} 
