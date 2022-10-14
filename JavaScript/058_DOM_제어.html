@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <p></p>
+
+    <strong class="sayHi">
+        반갑습니다.
+    </strong>
+
+    <script>
+        // innerHTML의 위험성
+        // https://developer.mozilla.org/ko/docs/Web/API/Element/innerHTML#security_considerations
+        // 1
+        const name = "john";
+        const txt = document.querySelector("p");
+        txt.innerHTML = name;
+        
+        // 2 innerHTML과 함께 삽입된 <script>는 실행되지 않도록 지정되어 있습니다.
+        const name2 = "<script>alert('I am John in an annoying alert!')<\/script>"; // /은 정규표현식으로 인식하기 때문에 이스케이프 문자 추가
+        txt.innerHTML = name2; // 실행되지 않습니다.
+
+        // 3 
+        const name3 = "<img src='x' onerror='alert(1)'>"; // onerror 어트리뷰트는 이미지 로딩이 실패했을 때 실행됩니다.
+        el.innerHTML = name3; // 실행됩니다.
+        
+
+        // insertAdjacentHTML : 요소 노드를 주어진 위치에 배치합니다.
+        const sayHi = document.querySelector('.sayHi');
+        sayHi.insertAdjacentHTML('beforebegin', '<span>안녕하세요 저는</span>');
+        sayHi.insertAdjacentHTML('afterbegin', '<span>재현입니다</span>');
+        sayHi.insertAdjacentHTML('beforeend', '<span>면접오시면</span>');
+        sayHi.insertAdjacentHTML('afterend', '<span>치킨사드릴게요</span>');
+    </script>
+</body>
+</html>
