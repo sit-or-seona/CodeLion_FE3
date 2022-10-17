@@ -71,3 +71,24 @@ const x = 0;
 const y = 1;
 console.log(!(x || y) === (!x && !y));
 console.log(!(x && y) === (!x || !y));
+
+
+// 카오스
+console.log([] == ![]) // true
+console.log([] == 0)
+
+// 1. 빈 Array는 비교구문이 나왔을 때 강제로 숫자로 형변환이 됩니다.
+console.log(0 == ![])
+
+// 2. ![] == false입니다.
+console.log(0 == false)
+
+// 3. false는 0으로 평가됩니다.
+console.log(0 == 0)
+
+console.log(null === undefined) // false
+console.log(null  == undefined) // true
+console.log(undefined == false) // false
+console.log(undefined === false) // false
+console.log(null == false) // false
+console.log(undefined === false) // false
