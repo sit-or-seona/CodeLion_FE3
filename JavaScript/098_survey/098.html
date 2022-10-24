@@ -12,7 +12,7 @@
         <fieldset>
             <!-- legend : 제목입니다. 반드시 첫 번째 자식 요소여야 합니다. -->
             <legend>JS 스터디 모집 설문조사</legend>
-            <progress max="100" value="50" class="bar-progress"></progress>
+            <progress max="100" value="0" class="bar-progress"></progress>
             <p class="msg-notice">설문지를 작성해주세요!</p>
 
             <label for="q1">질문1. 무엇을 가장 배우고 싶으세요?</label>
@@ -86,7 +86,7 @@
                     progressBar.setAttribute('value', 100);
                     break;
                 default:
-                    btnResetmessage.textContent = "설문지를 작성해주세요!";
+                    message.textContent = "설문지를 작성해주세요!";
                     progressBar.setAttribute('value', 0);
             }
         })
