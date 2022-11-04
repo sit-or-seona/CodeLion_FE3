@@ -72,7 +72,7 @@ const result = arr.reduce((a,c) => a += c);
 // 편평하게 만들기 - flat()
 [1, [2, [3, [4]]]].flat(); // [1, 2, [3, [4]]]
 [1, [2, [3, [4]]]].flat(1); // [1, 2, [3, [4]]]
-[1, [2, [3, [4]]]].flat(2); // [1, 2, [3, 4]]
+[1, [2, [3, [4]]]].flat(2); // [1, 2, 3, [4]]
 [1, [2, [3, [4]]]].flat(Infinity); // [1, 2, 3, 4]
 
 // 빈배열 만들기
@@ -80,12 +80,12 @@ Array(10).fill(0);
 [...Array(10)].map((_, i) => i + 1);
 '.'.repeat(10).split('.'); // 권장하지 않습니다.
 '.'.repeat(9).split('.');
-Array.from('ab', repeat(10));
+Array.from('ab'.repeat(10));
 ```
 
 * 활용할 수 있는 커스텀 메서드
 ```js
-const zip = (a, b) => a.map((v, i) => [v, b[i]);
+const zip = (a, b) => a.map((v, i) => [v, b[i]]);
 zip('hello', [1, 2, 3, 4, 5]) // error
 zip([1, 2, 3, 4, 5], 'hello') // 성공
 // [1, 'h']
