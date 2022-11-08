@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer 구현</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <main id="app">
+        <h1 class="tit-logo">
+            <img src="./img/weniv-logo.png" alt="위니브 로고">
+        </h1>
+        <article class="cont-timer">
+            <h2 class="tit-timer">TIMER</h2>
+            <form class="cont-inp">
+                <div>
+                    <label for="timer-hrs">HRS</label>
+                    <input id="timer-hrs" type="number">
+                </div>
+                <div>
+                    <label for="timer-min">MIN</label>
+                    <input id="timer-min" type="number">
+                </div>
+                <div>
+                    <label for="timer-sec">SEC</label>
+                    <input id="timer-sec" type="number">
+                </div>
+            </form>
+            <div class="cont-btns">
+                <button class="btn-start" type="button" disabled>
+                    <img src="./img/start-disabled.png" alt="타이머 시작 버튼">
+                </button>
+                <button class="btn-reset" type="button" disabled>
+                    <img src="./img/reset-disabled.png" alt="타이머 리셋 버튼">
+                </button>
+            </div>
+        </article>
+        <footer class="cont-footer">
+            <small>ⓒ WENIV Corp.</small>
+        </footer>
+    </main>
+</body>
+</html>
