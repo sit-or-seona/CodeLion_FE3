@@ -11,11 +11,6 @@ timerValue.addEventListener('keydown',(event) => {
     resetButton.disabled = false;
 }, true)
 
-
-startButton.addEventListener('click', timerStart);
-resetButton.addEventListener('click', timerReset);
-pauseButton.addEventListener('click', timerPause);
-
 const timerStart = () => {
     startButton.setAttribute('class', '.btn-pause');
 
@@ -43,3 +38,7 @@ const timerStart = () => {
     },1000)
 
 }
+
+startButton.addEventListener('click', timerStart);
+resetButton.addEventListener('click', timerReset);
+pauseButton.addEventListener('click', timerPause);
