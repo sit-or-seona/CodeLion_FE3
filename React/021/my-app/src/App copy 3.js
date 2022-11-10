@@ -1,29 +1,27 @@
-import React, { Fragment } from 'react';
-
-// function App() {
-//   return (
-//     <Fragment>
-//       <p>hello world 1</p>
-//       <p>hello world 2</p>
-//     </Fragment>
-//   );
-// }
-
-// function App() {
-//   return (
-//     <React.Fragment>
-//       <p>hello world 1</p>
-//       <p>hello world 2</p>
-//     </React.Fragment>
-//   );
-// }
-
 function App() {
+	const name = '라이캣!';
+  const someStyle = {backgroundColor:"black", color:"white"};
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = today.getMonth()+1;
+  const date = today.getDate();
+  const hour = today.getHours();
+  const min = today.getMinutes();
+  const sec = today.getSeconds();
+
   return (
-    <>
-      <p>hello world 1</p>
-      <p>hello world 2</p>
-    </>
+    <div>
+      <div>
+        <h1 style={someStyle}>안녕, {name} 1호</h1>
+        <h1>안녕, 라이캣 2호!</h1>
+        <div className="newClass"/>
+      </div>
+      <div style={{backgroundColor:"black", color:"white"}}>
+        <h1 style={{color:'red'}}>년 : {year}</h1>
+        <h1>월/일 : {month}/{date}</h1>
+        <h1>시간 : {hour}시 {min}분 {sec}초</h1>
+      </div>
+    </div>
   );
 }
 
