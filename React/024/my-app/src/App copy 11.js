@@ -24,19 +24,15 @@ export default function App() {
     ],
   };
 
-  const productArray = productList.products.map(v => {
-    return (
-      <li key={v.id}>
-        <h2>{v.title}</h2>
-        <p>{v.price}원</p>
-      </li>
-    )
-  })
-
   return (
-    <ol>
-      {productArray}
-    </ol>
+    <>
+      {productList.products.map((v, i) => (
+          <section key={v.id}>
+            <h2>{i+1} {v.title}</h2>
+            <p>{v.price}원</p>
+          </section>
+      ))}
+    </>
   )
 }
 
